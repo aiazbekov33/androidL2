@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/layout/activity_main.xml" value="0.12203389830508475" />
+        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/drawable/correct_answer.xml" value="0.1" />
+        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/drawable/fotobutton.xml" value="0.2703125" />
+        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/drawable/incorrect_answer.xml" value="0.1" />
+        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/drawable/no_answer.xml" value="0.1" />
+        <entry key="..\:/Users/Workstation/AndroidStudioProjects/androidL2/app/src/main/res/layout/activity_main.xml" value="0.264" />
       </map>
     </option>
   </component>

@@ -38,6 +38,8 @@
 
         <Button
             android:id="@+id/change_image_btn1"
+            android:background="@drawable/fotobutton"
+            android:layout_margin="6dp"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
             android:layout_weight="1"
@@ -46,6 +48,8 @@
 
         <Button
             android:id="@+id/change_image_btn2"
+            android:background="@drawable/fotobutton"
+            android:layout_margin="6dp"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
             android:layout_weight="1"
@@ -54,6 +58,8 @@
 
         <Button
             android:id="@+id/change_image_btn3"
+            android:background="@drawable/fotobutton"
+            android:layout_margin="6dp"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
             android:layout_weight="1"
@@ -62,6 +68,8 @@
 
         <Button
             android:id="@+id/change_image_btn4"
+            android:background="@drawable/fotobutton"
+            android:layout_margin="6dp"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
             android:layout_weight="1"
@@ -78,6 +86,8 @@
 
         <Button
             android:id="@+id/dog_btn"
+            android:background="@drawable/no_answer"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -85,6 +95,8 @@
 
         <Button
             android:id="@+id/cat_btn"
+            android:background="@drawable/no_answer"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -92,6 +104,8 @@
 
         <Button
             android:id="@+id/squirrel_btn"
+            android:background="@drawable/no_answer"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -99,6 +113,8 @@
 
         <Button
             android:id="@+id/quoka_btn"
+            android:background="@drawable/no_answer"
+            android:layout_margin="10dp"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"

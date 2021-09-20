@@ -3,6 +3,7 @@ package com.example.androidl2;
 import static com.example.androidl2.R.id.change_image_btn1;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageView;
     Button dog, cat, squirrel, quoka;
     boolean isDog, isCat, isSquirrel, isQuoka;
+    CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,20 +39,44 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 if (isDog) {
-                    YoYo.with(Techniques.Tada)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.dog_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Tada)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.dog_btn));
+                            dog.setBackgroundResource(R.drawable.correct_answer);
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            dog.setBackgroundResource(R.drawable.no_answer);
+
+                        }
+                    }.start();
+
 
 
 
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
                 } else {
-                    YoYo.with(Techniques.Shake)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.dog_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Shake)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.dog_btn));
+                            dog.setBackgroundResource(R.drawable.incorrect_answer);
+                        }
 
+                        @Override
+                        public void onFinish() {
+                            dog.setBackgroundResource(R.drawable.no_answer);
+
+                        }
+                    }.start();
                     Toast.makeText(MainActivity.this, "Не Верно!!", Toast.LENGTH_SHORT).show();
                 }
 
@@ -61,37 +87,89 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isCat) {
-                    YoYo.with(Techniques.Tada)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.cat_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Tada)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.cat_btn));
+                            cat.setBackgroundResource(R.drawable.correct_answer);
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            cat.setBackgroundResource(R.drawable.no_answer);
+
+                        }
+                    }.start();
+
+
 
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
+
                 } else {
-                    YoYo.with(Techniques.Shake)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.cat_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                    @Override
+                    public void onTick(long l) {
+                        YoYo.with(Techniques.Shake)
+                                .duration(300)
+                                .repeat(1)
+                                .playOn(findViewById(R.id.cat_btn));
+                        cat.setBackgroundResource(R.drawable.incorrect_answer);
+                    }
+                    @Override
+                    public void onFinish() {
+                        cat.setBackgroundResource(R.drawable.no_answer);
+                    }
+                }.start();
                     Toast.makeText(MainActivity.this, "Не Верно!!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
         squirrel.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
                 if (isSquirrel) {
-                    YoYo.with(Techniques.Tada)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.squirrel_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Tada)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.cat_btn));
+                            squirrel.setBackgroundResource(R.drawable.correct_answer);
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            squirrel.setBackgroundResource(R.drawable.no_answer);
+
+                        }
+                    }.start();
+
+
 
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
+
                 } else {
-                    YoYo.with(Techniques.Shake)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.squirrel_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Shake)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.squirrel_btn));
+                            squirrel.setBackgroundResource(R.drawable.incorrect_answer);
+                        }
+                        @Override
+                        public void onFinish() {
+                            squirrel.setBackgroundResource(R.drawable.no_answer);
+                        }
+                    }.start();
+
                     Toast.makeText(MainActivity.this, "Не Верно!!", Toast.LENGTH_SHORT).show();
 
                 }
@@ -102,17 +180,40 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (isQuoka) {
-                    YoYo.with(Techniques.Tada)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.quoka_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Tada)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.quoka_btn));
+                            quoka.setBackgroundResource(R.drawable.correct_answer);
+                        }
+
+                        @Override
+                        public void onFinish() {
+                            quoka.setBackgroundResource(R.drawable.no_answer);
+
+                        }
+                    }.start();
 
                     Toast.makeText(MainActivity.this, "Верно", Toast.LENGTH_SHORT).show();
                 } else {
-                    YoYo.with(Techniques.Shake)
-                            .duration(300)
-                            .repeat(1)
-                            .playOn(findViewById(R.id.quoka_btn));
+                    countDownTimer = new CountDownTimer(1000,1000) {
+                        @Override
+                        public void onTick(long l) {
+                            YoYo.with(Techniques.Shake)
+                                    .duration(300)
+                                    .repeat(1)
+                                    .playOn(findViewById(R.id.squirrel_btn));
+                            quoka.setBackgroundResource(R.drawable.incorrect_answer);
+                        }
+                        @Override
+                        public void onFinish() {
+                            quoka.setBackgroundResource(R.drawable.no_answer);
+                        }
+                    }.start();
+
                     Toast.makeText(MainActivity.this, "Не Верно!!", Toast.LENGTH_SHORT).show();
 
                 }
