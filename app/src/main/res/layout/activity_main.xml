@@ -32,7 +32,7 @@
     <LinearLayout
         android:id="@+id/first_linear"
         android:layout_width="match_parent"
-        android:layout_margin="12dp"
+        android:layout_margin="6dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/image_animal">
 
@@ -40,22 +40,33 @@
             android:id="@+id/change_image_btn1"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Картинка #1" />
+            android:text="фото #1" />
 
         <Button
             android:id="@+id/change_image_btn2"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Картинка #2" />
+            android:text="фото #2" />
 
         <Button
             android:id="@+id/change_image_btn3"
             android:layout_width="wrap_content"
             android:onClick="changeImage"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Картинка #3" />
+            android:text="фото #3" />
+
+        <Button
+            android:id="@+id/change_image_btn4"
+            android:layout_width="wrap_content"
+            android:onClick="changeImage"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="фото #4" />
 
     </LinearLayout>
 
@@ -68,22 +79,35 @@
         <Button
             android:id="@+id/dog_btn"
             android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Собака" />
 
         <Button
             android:id="@+id/cat_btn"
             android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Кошка" />
 
         <Button
             android:id="@+id/squirrel_btn"
             android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="Белка" />
 
+        <Button
+            android:id="@+id/quoka_btn"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Куока" />
+
+
+
     </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
