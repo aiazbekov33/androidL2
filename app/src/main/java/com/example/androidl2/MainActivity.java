@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                             YoYo.with(Techniques.Tada)
                                     .duration(300)
                                     .repeat(1)
-                                    .playOn(findViewById(R.id.cat_btn));
+                                    .playOn(findViewById(R.id.squirrel_btn));
                             squirrel.setBackgroundResource(R.drawable.correct_answer);
                         }
 
@@ -205,7 +205,7 @@ public class MainActivity extends AppCompatActivity {
                             YoYo.with(Techniques.Shake)
                                     .duration(300)
                                     .repeat(1)
-                                    .playOn(findViewById(R.id.squirrel_btn));
+                                    .playOn(findViewById(R.id.quoka_btn));
                             quoka.setBackgroundResource(R.drawable.incorrect_answer);
                         }
                         @Override
@@ -238,6 +238,7 @@ public class MainActivity extends AppCompatActivity {
                 isDog = true;
                 isCat = false;
                 isSquirrel = false;
+                isQuoka = false;
                 break;
 
             case R.id.change_image_btn2:
@@ -245,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
                 isCat = true;
                 isDog = false;
                 isSquirrel = false;
+                isQuoka = false;
                 break;
 
             case R.id.change_image_btn3:
@@ -252,6 +254,7 @@ public class MainActivity extends AppCompatActivity {
                 isSquirrel = true;
                 isDog = false;
                 isCat = false;
+                isQuoka = false;
                 break;
 
             case R.id.change_image_btn4:
